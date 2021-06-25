@@ -48,7 +48,7 @@ require \"vendor/autoload.php\";
 use Lemon\Kernel\Lemonade\Kernel;
 
 // Making Kernel instance
-\$kernel = new Kernel($argv);
+\$kernel = new Kernel(\$argv);
 
 // Executing whole system
 \$kernel->execute();
