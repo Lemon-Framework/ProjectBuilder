@@ -45,7 +45,7 @@ echo -e "#!/usr/bin/php
 
 // Including whole Kernel
 require \"vendor/autoload.php\";
-use Lemon\Kernel\Kernel;
+use Lemon\Kernel\Lemonade\Kernel;
 
 // Making Kernel instance
 \$kernel = new Kernel($argv);
