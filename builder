@@ -2,9 +2,17 @@
 
 # Lemon basic project builder
 
+
+
 YELLOW='\033[0;33m'
 RED='\033[0;31m'
 END='\033[0m'
+
+if (!composer)
+then
+    echo -e "${RED}Composer is required for installation ${END}\n"
+    exit 0
+fi
 
 echo -e "${YELLOW}
   _                                
@@ -17,6 +25,9 @@ echo -e "${YELLOW}
 ${END}                                   
 "
 
+echo -e "${YELLOW}Downloading Lemon...${END}"
+composer require lemon_framework/lemon
+echo ""
 echo "Building files..."
 
 mkdir public
