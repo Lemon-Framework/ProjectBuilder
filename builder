@@ -8,8 +8,9 @@ YELLOW='\033[0;33m'
 RED='\033[0;31m'
 END='\033[0m'
 
-if (!composer)
+if (composer)
 then
+else
     echo -e "${RED}Composer is required for installation ${END}\n"
     exit 0
 fi
